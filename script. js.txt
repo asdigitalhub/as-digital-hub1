@@ -1,0 +1,46 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Automatically show the current year
+  const yearElement = document.getElementById("year");
+
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+
+  // Handle the order form
+  const orderForm = document.getElementById("orderForm");
+
+  if (orderForm) {
+    orderForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const service = document.getElementById("service").value;
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !service || !message) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      // Replace with your own WhatsApp number.
+      // Example Malaysia number: 60123456789
+      const whatsappNumber = "60123456789";
+
+      const orderMessage =
+        "Hello AS DIGITAL HUB!\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Service: " + service + "\n" +
+        "Project Details: " + message;
+
+      const whatsappURL =
+        "https://wa.me/" + 601112810370 +
+        "?text=" + encodeURIComponent(orderMessage);
+
+      window.open(whatsappURL, "_blank");
+    });
+  }
+
+});

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AS DIGITAL HUB - Social Media Design and Digital Marketing Services">
+  <title>AS DIGITAL HUB | Digital Marketing & Design</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #1e293b;
+      background: #f5f9ff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      box-shadow: 0 2px 12px #dbeafe;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      color: #0755c9;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #1e293b;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #0878f9;
+    }
+
+    .hero {
+      padding: 90px 7%;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #063b91, #087bfa);
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 55px);
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ffffff;
+      color: #0755c9;
+      padding: 12px 24px;
+      margin: 6px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-blue {
+      background: #0755c9;
+      color: #ffffff;
+    }
+
+    section {
+      padding: 65px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #0755c9;
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .section-description {
+      text-align: center;
+      margin-bottom: 35px;
+      color: #64748b;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 27px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px #dbeafe;
+    }
+
+    .card h3 {
+      color: #0755c9;
+      margin-bottom: 12px;
+    }
+
+    .portfolio-box {
+      min-height: 170px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #dbeafe, #93c5fd);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      color: #063b91;
+      font-size: 21px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      font-size: 28px;
+      font-weight: bold;
+      color: #0755c9;
+      margin: 15px 0;
+    }
+
+    .contact {
+      background: #e8f2ff;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 13px;
+      margin: 9px 0 15px;
+      border: 1px solid #cbd5e1;
+      border-radius: 7px;
+      font-size: 15px;
+    }
+
+    button {
+      background: #0755c9;
+      color: white;
+      border: none;
+      padding: 14px 20px;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    footer {
+      background: #062b64;
+      color: white;
+      text-align: center;
+      padding: 28px 15px;
+    }
+
+    footer a {
+      color: #bfdbfe;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+      }
+
+      nav {
+        text-align: center;
+        line-height: 2.3;
+      }
+
+      .hero {
+        padding: 65px 5%;
+      }
+
+      section {
+        padding: 45px 5%;
+      }
+    }
+  </style>
+</head>
+<script src="script.js"></script>
+</body>
+</html>
+<body>
+
+  <header>
+    <div class="logo">AS DIGITAL HUB</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#packages">Packages</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+<section class="hero" id="home">
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="welcome">WELCOME TO</p>
+
+      <h1>AS DIGITAL HUB</h1>
+
+      <h2>Creative Design & Digital Marketing</h2>
+
+      <p class="description">
+        Hi, I'm Arfin Shorif. I help businesses grow online
+        with creative social media designs and smart
+        digital marketing solutions.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn btn-primary">
+          View My Work
+        </a>
+
+        <a href="#contact" class="btn btn-outline">
+          Contact Me
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img
+        src="my-photo.jpg"
+        alt="Shoriful - AS DIGITAL HUB"
+      >
+      <div class="photo-caption">
+        <strong>AS DIGITAL HUB</strong>
+        <span>Creative Digital Solutions</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+    <section id="services">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-description">
+        Creative solutions for your online business.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>🎨 Social Media Design</h3>
+          <p>Professional Facebook and Instagram posts, banners and cover designs.</p>
+        </div>
+
+        <div class="card">
+          <h3>📱 Social Media Marketing</h3>
+          <p>Content planning and social media page improvement strategies.</p>
+        </div>
+
+        <div class="card">
+          <h3>📈 Digital Marketing</h3>
+          <p>Marketing ideas to help your brand reach the right audience.</p>
+        </div>
+
+        <div class="card">
+          <h3>✍️ Content Creation</h3>
+          <p>Engaging captions, promotional content and creative post ideas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <h2 class="section-title">Our Portfolio</h2>
+      <p class="section-description">
+        Explore our creative design categories.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="portfolio-box">Facebook Post Design</div>
+          <p>Creative promotional post concepts.</p>
+        </div>
+
+        <div class="card">
+          <div class="portfolio-box">Instagram Design</div>
+          <p>Modern social media graphics.</p>
+        </div>
+
+        <div class="card">
+          <div class="portfolio-box">Business Banner</div>
+          <p>Professional brand and cover concepts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="packages">
+      <h2 class="section-title">Our Packages</h2>
+      <p class="section-description">
+        Choose a package that suits your business.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Starter Package</h3>
+          <p>3 Social Media Designs</p>
+          <p>Basic Creative Concepts</p>
+          <div class="price">Contact Us</div>
+          <a class="btn btn-blue" href="#contact">Order Now</a>
+        </div>
+
+        <div class="card">
+          <h3>Business Package</h3>
+          <p>10 Social Media Designs</p>
+          <p>Consistent Visual Style</p>
+          <div class="price">Contact Us</div>
+          <a class="btn btn-blue" href="#contact">Order Now</a>
+        </div>
+
+        <div class="card">
+          <h3>Custom Package</h3>
+          <p>Tailored Design Solutions</p>
+          <p>Discuss Your Requirements</p>
+          <div class="price">Custom Quote</div>
+          <a class="btn btn-blue" href="#contact">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2 class="section-title">Marketing Tips</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Post Consistently</h3>
+          <p>Maintain a realistic content schedule for your audience.</p>
+        </div>
+
+        <div class="card">
+          <h3>Use Quality Designs</h3>
+          <p>Keep your brand colors, fonts and message consistent.</p>
+        </div>
+
+        <div class="card">
+          <h3>Know Your Audience</h3>
+          <p>Create content that answers your customers' needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-description">
+        Tell us about your project and design requirements.
+      </p>
+
+      <form id="orderForm">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text"
+               placeholder="Enter your name" required>
+
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email"
+               placeholder="Enter your email" required>
+
+        <label for="service">Select a Service</label>
+        <select id="service" name="service" required>
+          <option value="">Choose a service</option>
+          <option>Facebook Post Design</option>
+          <option>Instagram Post Design</option>
+          <option>Social Media Marketing</option>
+          <option>Business Banner Design</option>
+          <option>Custom Project</option>
+        </select>
+
+        <label for="message">Project Details</label>
+        <textarea id="message" name="message" rows="5"
+                  placeholder="Describe your project" required></textarea>
+
+        <button type="submit">Send Order via WhatsApp</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <h3>AS DIGITAL HUB</h3>
+    <p>Creative Design. Smart Marketing. Digital Growth.</p>
+    <p>Email: shorefkhan123@gmail.com</p>
+    <p>WhatsApp: 601112810370.</p>
+    <p>© <span id="year"></span> AS DIGITAL HUB. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    document.getElementById("orderForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const service = document.getElementById("service").value;
+      const message = document.getElementById("message").value.trim();
+
+      // Replace with your WhatsApp number, including country code.
+      // Example: 601112810370 (no + sign or spaces)
+      const whatsappNumber = "601112810370";
+
+      const text =
+        "Hello AS DIGITAL HUB!%0A" +
+        "Name: " + encodeURIComponent(name) + "%0A" +
+        "Email: " + encodeURIComponent(email) + "%0A" +
+        "Service: " + encodeURIComponent(service) + "%0A" +
+        "Project: " + encodeURIComponent(message);
+
+      window.open(
+        "https://wa.me/" + whatsappNumber + "?text=" + text,
+        "_blank"
+      );
+    });
+  </script>
+
+</body>
+</html>
